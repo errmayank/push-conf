@@ -1,4 +1,4 @@
-# push-conf
+# push-conf cmds
 
 Print remotes
 ```sh
@@ -7,14 +7,14 @@ git config --get remote.pushDefault
 git config --get branch.$(git branch --show-current).remote
 ```
 
-Set
+Set remotes
 ```sh
 git config branch.$(git branch --show-current).pushRemote origin
 git config remote.pushDefault origin
 git config branch.$(git branch --show-current).remote origin
 ```
 
-Unset
+Unset remotes
 ```sh
 git config --unset branch.$(git branch --show-current).pushRemote
 git config --unset remote.pushDefault
